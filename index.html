@@ -31,11 +31,15 @@
 
 <script>
     const line = document.querySelector(".line-content");
-    const dismiss = document.querySelector(".dismiss");
+    const dismiss = document.querySelector(".dismiss-icon");
     line.addEventListener("click", ()=>{
-        
-        alert('none');
+        line.style.display = "none";
+        dismiss.style.display="block";
     })
+    dismiss.addEventListener("click", ()=>{
+        line.style.display = "block";
+        dismiss.style.display="none";
+    });
 </script>
 
 </body>
