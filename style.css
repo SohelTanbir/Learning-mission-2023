@@ -9,6 +9,9 @@ body{
 a,a:hover{
     text-decoration: none;
 }
+.d-none{
+    display: none;
+}
 .container{
     position: relative;
     margin: 35px auto 0;
@@ -27,6 +30,7 @@ a,a:hover{
     cursor: pointer;
 }
 .three-lines{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,15 +63,26 @@ a,a:hover{
     background-color:#df9203;
     margin-top: 5px;
 }
-.three-lines .line-4{
-    width: 20px;
-    height: 3px;
-    background-color:#df9203;
-    margin-top: 5px;
+.three-lines .line{
+    /* display: none; */
 }
-.three-lines .line-5{
-    width: 20px;
+.dismiss-icon {
+    position: absolute;
+    left: 1px;
+    display: none;
+    top: 8px;
+}
+.dismiss-icon .line-4 {
+    width: 25px;
     height: 3px;
-    background-color:#df9203;
+    background-color: #df9203;
     margin-top: 5px;
+    transform: translate(1px, 0px) rotate(-45deg);
+}
+.dismiss-icon .line-5 {
+    width: 25px;
+    height: 3px;
+    background-color: #df9203;
+    margin-top: 5px;
+    transform: translate(1px, -9px) rotate(45deg);
 }
