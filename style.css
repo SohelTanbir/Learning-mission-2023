@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    background-color: #F6C390;
+}
+a,a:hover{
+    text-decoration: none;
+}
+.container{
+    position: relative;
+    margin: 35px auto 0;
+    width: 300px;
+    height: 534px;
+    background-color: #533557;
+}
+
+.toggle-icon{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.three-lines{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height:30px;
+    border-radius: 50%;
+    cursor: pointer;
+    background:transparent;
+    transition: .6s;
+}
+.three-lines:hover{
+    box-shadow: 0 0 0 10px rgb(0 0 0 / 10%), inset 0 0 0 90px rgb(0 0 0 / 10%);
+  
+}
+.three-lines .line-1{
+    width: 10px;
+    height: 3px;
+    background-color: #df9203;
+}
+.three-lines .line-2{
+    width: 20px;
+    height: 3px;
+    background-color:#df9203;
+    margin-top: 5px;
+}
+.three-lines .line-3{
+    width: 20px;
+    height: 3px;
+    background-color:#df9203;
+    margin-top: 5px;
+}
+.three-lines .line-4{
+    width: 20px;
+    height: 3px;
+    background-color:#df9203;
+    margin-top: 5px;
+}
+.three-lines .line-5{
+    width: 20px;
+    height: 3px;
+    background-color:#df9203;
+    margin-top: 5px;
+}
