@@ -6,10 +6,13 @@ body{
     font-family: sans-serif;
     background-color: #F6C390;
 }
-a,a:hover{
+a,
+a:hover{
     text-decoration: none;
 }
-
+ul{
+    list-style-type: none;
+}
 .container{
     position: relative;
     margin: 35px auto 0;
@@ -64,7 +67,7 @@ a,a:hover{
 .dismiss-icon {
     position: absolute;
     left: 1px;
-    display: none;
+    visibility: hidden;
     top: 8px;
 }
 .dismiss-icon .line-4 {
@@ -72,7 +75,6 @@ a,a:hover{
     height: 3px;
     background-color: #df9203;
     margin-top: 5px;
-    transition: 0.6s;
     transform: translate(1px, 0px) rotate(-45deg);
 }
 .dismiss-icon .line-5 {
@@ -82,3 +84,4 @@ a,a:hover{
     margin-top: 5px;
     transform: translate(1px, -9px) rotate(45deg);
 }
+/*menu*/

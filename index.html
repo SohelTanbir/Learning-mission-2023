@@ -23,7 +23,13 @@
                 <div class="line-5 "></div>
             </div>
         </div>
-
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
     </div>
   
 </div>
@@ -33,12 +39,12 @@
     const line = document.querySelector(".line-content");
     const dismiss = document.querySelector(".dismiss-icon");
     line.addEventListener("click", ()=>{
-        line.style.display = "none";
-        dismiss.style.display="block";
+        line.style.visibility = "hidden";
+        dismiss.style.visibility = "visible";
     })
     dismiss.addEventListener("click", ()=>{
-        line.style.display = "block";
-        dismiss.style.display="none";
+        line.style.visibility = "visible";
+        dismiss.style.visibility = "hidden";
     });
 </script>
 
