@@ -37,3 +37,48 @@ body{
     height: 70px;
     z-index: 1;
 }
+.navigation ul li a{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+}
+.navigation ul li a .icon{
+    position:relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: var(--color);
+}
+.navigation ul li.active a .icon{
+    transform: translateY(-35px);
+}
+.navigation ul li a .text{
+    position: absolute;
+    font-size: 0.75erm;
+    color: var(--color);
+    letter-spacing: .05em;
+    transition: .5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.navigation ul li.active a .text{
+    opacity: 1;
+    transform: translateY(10px);
+}
+.indicator{
+    position: absolute;
+    top: -38px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #29fd53;
+    border: 6px solid var(--color);
+}
