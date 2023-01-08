@@ -31,20 +31,25 @@
             </ul>
         </div>
     </div>
-  
 </div>
 
 
 <script>
     const line = document.querySelector(".line-content");
     const dismiss = document.querySelector(".dismiss-icon");
+    const three_lines = document.querySelector(".three-lines");
+    const menu = document.querySelector(".menu");
     line.addEventListener("click", ()=>{
         line.style.visibility = "hidden";
         dismiss.style.visibility = "visible";
+        three_lines.classList.toggle("large-hover");
+        menu.style.visibility = "visible";
     })
     dismiss.addEventListener("click", ()=>{
         line.style.visibility = "visible";
         dismiss.style.visibility = "hidden";
+        three_lines.classList.toggle("large-hover");
+        menu.style.visibility = "hidden";
     });
 </script>
 
