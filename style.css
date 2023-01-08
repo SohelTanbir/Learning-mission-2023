@@ -90,7 +90,7 @@ ul{
 .menu{
     width: 100%;
     visibility: hidden;
-    transition:1s; 
+    transition:.2s; 
 }
 .menu ul {
     margin-top:40px;
