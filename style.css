@@ -59,6 +59,7 @@ body{
 }
 .navigation ul li.active a .icon{
     transform: translateY(-35px);
+    color: #fff;
 }
 .navigation ul li a .text{
     position: absolute;
@@ -79,7 +80,7 @@ body{
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background: #29fd53;
+    background: #6217ec;
     transition: .5s;
     border: 6px solid var(--color);
 }
