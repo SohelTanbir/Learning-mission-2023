@@ -16,8 +16,8 @@ const audioFiles = [
 
 ];
 let currentIndext = 0;
-let previousIndex =currentIndext -1;
-let nextIndex =currentIndext +1
+let previousIndex = 0;
+let nextIndex = 0;
 const audioObjects = [];
 
 for(let i = 0; i <audioFiles.length; i++) {
@@ -33,38 +33,38 @@ function playAudio(index) {
     const audio = audioObjects[index]
     audio.play();
     innerCircleElement.classList.add('playing');
-    console.log("playing audio", index);
+    console.log("playing =", index);
 }
     
 function pauseAudio(index) {
     const audio = audioObjects[index]
     audio.pause();
     innerCircleElement.classList.remove('playing');
+    console.log("pause =", index );
 }
 
 function previousAudio() {
-    if(previousIndex < audioObjects.length){
-        previousIndex = currentIndext-1;
-        console.log("prev index", previousIndex);
-        pauseAudio(previousIndex)
-       playAudio(previousIndex);
+    if(nextIndex >0){
+        nextIndex--;
+        playAudio(nextIndex);
+        console.log("prev index =", nextIndex);
     }
 }
 function nextAudio() {
     if(nextIndex < audioObjects.length){
-        nextIndex += currentIndext+1;
-        console.log("next index", nextIndex-1);
-        pauseAudio(nextIndex-1)
-       playAudio(nextIndex);
+        nextIndex++;
+        playAudio(nextIndex);
+        console.log("nextIndex =", nextIndex);
     }
+   
+      
 }
-
 // add eventlistener 
 playBtn.addEventListener("click", function(e) {
     playAudio(currentIndext)
 })
 pauseBtn.addEventListener("click", function(e) {
-    pauseAudio(currentIndext)
+    pauseAudio()
 })
 prevBtn.addEventListener("click", function(e) {
     previousAudio()
