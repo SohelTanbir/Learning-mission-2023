@@ -12,6 +12,12 @@ body{
     align-items: center;
     height: 100vh;
 }
+.show{
+    display: block!important;
+}
+.hide{
+    display: none!important;
+}
 .player-content h1{
     color: orange;
     margin-bottom: 30px;
