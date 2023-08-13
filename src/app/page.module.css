@@ -1,11 +1,24 @@
 .menu{
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content:center;
   padding: 20px 10px;
+  background: orangered;
+}
+.menu  li{
+  margin-right: 30px;
+}
+.menu  li a{
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
 }
 .textCenter{
   text-align: center;
   padding-top:50px;
   padding-bottom:50px;
+}
+.post{
+  text-align: center;
+  padding: 20px 15px;
 }
