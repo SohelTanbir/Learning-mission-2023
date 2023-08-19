@@ -8,3 +8,6 @@ ul li{
 a,a:hover{
   text-decoration: none;
 }
+body {
+  text-align: center;
+}

@@ -4,6 +4,7 @@ import styles from '../../page.module.css';
 
 const Header = () => {
 
+
     return (
         <ul className={styles.menu}>
         <li>
@@ -14,6 +15,9 @@ const Header = () => {
         </li>
         <li>
             <Link href="/contact">Contact </Link>
+        </li>
+        <li>
+            <Link href="/users">Users </Link>
         </li>
         <li>
             <Link href="/dashboard">Dashboard </Link>

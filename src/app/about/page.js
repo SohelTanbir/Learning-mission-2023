@@ -1,8 +1,11 @@
 import React from 'react';
 
-const About = () => {
+
+const About = async () => {
+   
+
     return (
-        <h1>About us page</h1>
+        <h1>About  page </h1>
     );
 };
 
