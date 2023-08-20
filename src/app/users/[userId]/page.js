@@ -1,14 +1,14 @@
 
 // fetch a specific user data 
-const fetchUser = async ()=>{
-    const response = await fetch(`https://jsonplaceholder.typicode.com/users/1`);
+const fetchUser = async (userId)=>{
+    const response = await fetch(`https://jsonplaceholder.typicode.com/users/${userId}`);
     const user = await response.json();
     return user;
 }
 
 
-const SingleUser = async () => {
-    const user = await fetchUser();
+const SingleUser = async ({params}) => {
+    const user = await fetchUser(params.userId);
 
     return (
         <div style={{padding:'30px'}}>
