@@ -1,1 +1,1 @@
-# Task Manager App
+# Tasks Manager App
